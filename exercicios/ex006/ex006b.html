@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            font-family: arial;
+            font-size: 2em;
+            background-color: rgb(92, 92, 92);
+        }
+
+        #area {
+            background-color: rgb(0, 34, 34);
+            width: 200px;
+            height: 200px;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja
+    </div>
+
+    <script>
+        var a = document.querySelector('div#area')
+        a.addEventListener('mousedown', segurar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        a.addEventListener('mouseup', soltar)
+
+
+    // 
+    // Funções
+    // 
+
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.backgroundColor = 'blue'
+            a.style.color = 'white'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.backgroundColor = 'rgb(0, 34, 34)'
+            a.style.color = 'white'
+        }
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.backgroundColor = 'darkgreen'
+            a.style.color = 'white'
+        }
+
+        function segurar() {
+            a.innerText = 'Segurou!'
+            a.style.backgroundColor = 'darkorange'
+            a.style.color = 'white'
+        }
+
+        function soltar() {
+            a.innerText = 'Soltou!'
+            a.style.backgroundColor = 'gold'
+            a.style.color = 'black'
+        }
+
+        
+
+    </script>
+</body>
+</html>
