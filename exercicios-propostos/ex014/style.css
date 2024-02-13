@@ -14,9 +14,12 @@ body {
 header {
     text-align: center;
     color: white;
-
+    
 }
 
+#msg {
+    padding-bottom: 15px;
+}
 
 section {
     background-color: white;
@@ -30,6 +33,7 @@ section {
 }
 
 footer {
+
     font-style: italic;
     text-align: center;
     color: white;
