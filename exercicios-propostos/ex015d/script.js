@@ -6,7 +6,7 @@ function verificar() {
     var img = document.getElementById('imagem')
     
     if (fano.value.length == 0 || anoatual <= Number(fano.value)) {
-        alert('Não foi possível calcular com o ano informado!')
+        alert('Não foi possível calcular com o ano digitado! \nInforme um ano anterior ao atual.')
     } else {
         var idade = anoatual - Number(fano.value)
         var fsex = document.getElementsByName('radsex')
