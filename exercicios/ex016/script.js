@@ -1,24 +1,30 @@
-var inicio = 1
-var fim = 10
-var passo = 1
-var cont = ''
+function contar() {
+    var ini = document.getElementById('txti')
+    var fim = document.getElementById('txtf')
+    var passo = document.getElementById('txtp')
+    var result = document.querySelector('div#result')
 
-for (var cont = inicio; cont <= fim ; cont + passo) {
-    console.log(`Passo ${cont}`)
+    
+    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+        alert('Não é possível calcular! \nFaltam dados!')
+    } else { 
+        result.innerHTML = 'Contando: '
+        let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+
+        if (i < f) {
+            for (let c = i; c <= f; c += p) {
+            result.innerHTML += `${c} \u{1F449}`
+        }
+        
+        } else {
+            for (let c = i; c >= f; c -= p) {
+            result.innerHTML += `${c} \u{1F449}`
+        } 
+        
+        } 
+    } result.innerHTML += '🏴'
+        
+
 }
-
-// function contar() {
-//     var inicio = document.querySelector ('input#inicio')
-//     var fim = document.querySelector('input#fim')
-//     var passo = document.querySelector('input#passo')
-//     var result = document.querySelector('div#result')
-    
-//     if (inicio.value.length <= 0) {
-//         result.innerHTML = 'Não foi possível contar! <br>Informe um número de início.'
-//     } else {
-        
-        
-//     }
-    
-    
-// }

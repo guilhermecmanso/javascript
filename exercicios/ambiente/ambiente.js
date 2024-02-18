@@ -1,9 +1,18 @@
+var passo = 2
+var c = 1
+var fim = 10
 
-console.log('Começando...')
-for (var c=1; c <=5; c++) {
+while (c <= 10) {
     console.log(`Passo ${c}`)
+    c + 2
 }
-console.log('Acabou!')
+
+
+// console.log('Começando...')
+// for (var c=1; c <=5; c+passo) {
+//     console.log(`Passo ${c}`)
+// }
+// console.log('Acabou!')
 
 
 
