@@ -3,7 +3,6 @@ function contar() {
     var fim = document.getElementById('txtf')
     var passo = document.getElementById('txtp')
     var result = document.querySelector('div#result')
-
     
     if (ini.value.length == 0 || fim.value.length == 0) {
         result.innerHTML = 'Não foi possível calcular!'
