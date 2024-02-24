@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Tabuada</h1>
 
     </header>
     <section>
         <div>
-            <p>Número: <input type="number" name="txtnum" id="txtnum"> <input type="button" value="Gerar Tabuada" onclick="gtabuada()"></p>
+            <p>Número: <input type="number" name="num" id="txtnum">
+            <input type="button" value="Gerar Tabuada" onclick="gtabuada()"></p>
         </div>
 
-        <div id="result">
-            
+        <div>
+            <select name="Tabuada" id="seltab" size="10">
+                <option>Digite um número acima</option>
+            </select>
         </div>
-
-
     </section>
     <footer>
         <p>&copy;CursoemVideo</p>
     </footer>
 
-    <script src="script.js">
-        
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
